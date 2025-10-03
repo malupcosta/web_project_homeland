@@ -1,0 +1,345 @@
+/*! normalize.css v8.0.1 | Licença MIT | github.com/necolas/normalize.css */
+
+/* Documento
+   ========================================================================== */
+
+/**
+ * 1. Corrigindo a altura da linha para todos os navegadores.
+ * 2. Impedindo o ajuste automático do tamanho da fonte no iOS ao virar a tela.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Seções
+   ========================================================================== */
+
+/**
+ * Removendo a margem padrão do body.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Garantindo que a tag <main> funcione bem em navegadores mais antigos (IE).
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Corrigindo o tamanho e a margem de <h1> para que fiquem consistentes
+ * dentro de tags como <section> e <article>.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Conteúdo Agrupado
+   ========================================================================== */
+
+/**
+ * 1. Ajustando o box-sizing da tag <hr> no Firefox.
+ * 2. Garantindo que o conteúdo extra (overflow) seja visível no Edge e IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Corrigindo a herança do tamanho da fonte em todos os navegadores.
+ * 2. Corrigindo o tamanho de fonte `em` para tags de código.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Semântica a Nível de Texto
+   ========================================================================== */
+
+/**
+ * Removendo o fundo cinza de links ativos no IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Removendo a borda inferior no Chrome 57-.
+ * 2. Adicionando a decoração de texto correta (sublinhado pontilhado).
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Adicionando o negrito correto para as tags <b> e <strong>.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Padronizando a família e o tamanho da fonte para elementos de código.
+ * 2. Corrigindo o tamanho ímpar da fonte `em`.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Ajustando o tamanho da fonte para a tag <small>.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Impedindo que `sub` e `sup` afetem a altura da linha.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Conteúdo Incorporado
+   ========================================================================== */
+
+/**
+ * Removendo a borda que o IE 10 coloca em imagens dentro de links.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Formulários
+   ========================================================================== */
+
+/**
+ * 1. Fazendo com que os elementos de formulário herdem os estilos da fonte.
+ * 2. Removendo a margem padrão no Firefox e Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Garantindo que o overflow seja visível em botões e inputs no IE e Edge.
+ */
+
+button,
+input {
+  overflow: visible;
+}
+
+/**
+ * Removendo a transformação de texto automática em botões e selects.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * Corrigindo um bug que impede a estilização de botões no iOS e Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Removendo a borda interna e o padding de botões no Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restaurando o contorno de foco (outline) que foi removido pela regra anterior no Firefox.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Corrigindo o padding em fieldsets no Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Corrigindo a quebra de texto em legendas no Edge e IE.
+ * 2. Corrigindo a herança de cor.
+ * 3. Removendo o padding para evitar surpresas.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Adicionando o alinhamento vertical correto para a tag <progress>.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Removendo a barra de rolagem vertical padrão em textareas no IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Adicionando o box-sizing correto para checkboxes e radios no IE 10.
+ * 2. Removendo o padding no IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Corrigindo o estilo do cursor nos botões de número no Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Corrigindo a aparência de campos de busca no Chrome e Safari.
+ * 2. Corrigindo o estilo do contorno no Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Removendo a decoração interna de busca no Chrome e Safari (macOS).
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Corrigindo a estilização de botões de upload de arquivo no iOS e Safari.
+ * 2. Fazendo a fonte herdar do elemento pai no Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interativo
+   ========================================================================== */
+
+/**
+ * Adicionando a exibição correta para a tag <details>.
+ */
+
+details {
+  display: block;
+}
+
+/**
+ * Adicionando a exibição correta para a tag <summary>.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Diversos
+   ========================================================================== */
+
+/**
+ * Adicionando a exibição correta para a tag <template> no IE.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Garantindo que elementos com o atributo [hidden] não sejam exibidos.
+ */
+
+[hidden] {
+  display: none;
+}
