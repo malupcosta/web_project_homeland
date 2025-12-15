@@ -19,3 +19,27 @@
   display: block;
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .photo-grid {
+    max-width: 720px;
+    padding: 0 24px;
+  }
+
+  .photo-grid__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .photo-grid {
+    max-width: 288px;
+    padding: 0 16px;
+  }
+
+  .photo-grid__list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
