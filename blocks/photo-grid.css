@@ -1,7 +1,7 @@
 .photo-grid {
   max-width: 1184px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 92px 48px 0;
 }
 
 .photo-grid__list {
@@ -11,7 +11,7 @@
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 15px;
 }
 
 .photo-grid__image {
@@ -23,19 +23,19 @@
 @media screen and (max-width: 768px) {
   .photo-grid {
     max-width: 720px;
-    padding: 0 24px;
+    padding: 88px 24px 0;
   }
 
   .photo-grid__list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 14px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .photo-grid {
     max-width: 288px;
-    padding: 0 16px;
+    padding: 64px 16px 0;
   }
 
   .photo-grid__list {
