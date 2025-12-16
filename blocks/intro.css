@@ -1,11 +1,10 @@
 .intro {
   display: flex;
   flex-direction: column;
-  margin: 0 auto auto 0;
+  margin: 0 auto;
   padding-top: 92px;
   padding-left: 148px;
   max-width: 830px;
-  max-height: 482px;
 }
 
 .intro__title {
